@@ -16,3 +16,4 @@ target_compile_features(mnist_example PRIVATE cxx_range_for)
 
 # Pass MNIST data directory to main.cpp
 target_compile_definitions(mnist_example PRIVATE MNIST_DATA_LOCATION="${MNIST_DATA_DIR}")
+target_compile_definitions(mnist_example PRIVATE MNIST_FASHION_DATA_LOCATION="${MNIST_FASHION_DATA_DIR}")

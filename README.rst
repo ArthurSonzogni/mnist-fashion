@@ -3,6 +3,12 @@ mnist
 
 Simple C++ reader for MNIST dataset
 
+This is a fork of: https://github.com/wichtounet/mnist
+It make the fashion-mnist available in addition to the regular MNIST dataset.
+
+The fashion MNIST database can be found at:
+https://github.com/zalandoresearch/fashion-mnist
+
 Usage
 -----
 
@@ -12,9 +18,9 @@ You have to include mnist_reader.hpp in your code:
 
     #include "mnist/mnist_reader.hpp"
 
-And then, you can use the function :code:`read_dataset()` that returns a struct with a
-vector of training images, one of test images, one of training labels and one of
-test labels:
+And then, you can use the function :code:`read_dataset()` that returns a struct
+with a vector of training images, one of test images, one of training labels and
+one of test labels:
 
 .. code:: cpp
 
@@ -57,3 +63,6 @@ The header files are distributed under the terms of the MIT License. The MNIST
 files are not my property. If used in a paper, you'll need to cite the reference
 paper, as indicated in the `official website
 <http://yann.lecun.com/exdb/mnist/>`_.
+
+The fashion MNIST data are not my property either. Please see
+https://github.com/zalandoresearch/fashion-mnist
